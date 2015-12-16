@@ -1,0 +1,65 @@
+@import 'slider.css';
+
+body {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #333;
+  font-size: 1.0em;
+  line-height: 1.5em;
+  font-family: 'Ubuntu', Verdana, Helvetica, serif, sans-serif;
+}
+
+nav.menu {
+  font-family: 'Ubuntu', Verdana, Helvetica, serif, sans-serif;
+  font-size: 1.0em;
+  border: 1px solid #ccc;
+  background-color: #000;
+}
+
+ul.menu-list {
+   list-style-type: none;
+   padding: 0;
+   margin: 1em 0em;
+   text-align: right;
+}
+
+li.menu-item {
+    color:  #fff;
+     display: inline;
+     margin: 0em 1.5em;
+}
+
+li.menu-item a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+}
+
+article {
+  text-align: justify;
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+}
+
+div#content {
+  background-color: #e3e3e3;
+}
+
+footer {
+  font-family: Verdana, Helvetica, serif, sans-serif;
+  font-size: 11pt;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  color: #fff;
+}
+
+.social-bar img {
+  margin: 10px;
+  height: 40px;
+  width: 40px;
+}
