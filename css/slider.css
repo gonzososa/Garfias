@@ -21,7 +21,7 @@ div#galeria-servicios {
 figure.slider {
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 0, 0, 10px, 0;
   width: 500%;
   font-size: 0;
   animation: 30s slidy infinite;
@@ -48,5 +48,5 @@ figure.slider figure figcaption {
   color: #fff;
   width: 100%;
   font-size: 2rem;
-  padding: .6rem
+  padding: .8rem
 }

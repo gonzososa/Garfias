@@ -10,8 +10,6 @@ body {
 }
 
 nav.menu {
-  font-family: 'Ubuntu', Verdana, Helvetica, serif, sans-serif;
-  font-size: 1.0em;
   border: 1px solid #ccc;
   background-color: #000;
 }
@@ -24,21 +22,65 @@ ul.menu-list {
 }
 
 li.menu-item {
-    color:  #fff;
-     display: inline;
-     margin: 0em 1.5em;
+  color:  #fff;
+  display: inline-block;
+  /*margin: 0em 1.5em;*/
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0;
+  padding-right: 1em;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+li.menu-item:hover {
+  background-color: #999;
 }
 
 li.menu-item a {
   color: #fff;
-  display: inline-block;
+  display: inline;
   text-decoration: none;
 }
 
+ul.submenu-servicios {
+  border: 1px solid #fff;
+  text-align: left;
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  top: 65px;
+  position: absolute;
+  z-index: 1;
+  background-color: #000;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+li.menu-item:hover > ul.submenu-servicios {
+  display: block;
+}
+
+ul.submenu-servicios li {
+  display: block;
+  float: none;
+  background: none;
+  margin: 5px;
+  padding: 0;
+}
+
 article {
+  padding: 10px;
   text-align: justify;
-  -webkit-column-count: 3; /* Chrome, Safari, Opera */
-  -moz-column-count: 3; /* Firefox */
+  -webkit-column-count: 3;
+  -moz-column-count: 3
   column-count: 3;
 }
 
@@ -46,9 +88,18 @@ div#content {
   background-color: #e3e3e3;
 }
 
+.contacto {
+  display: table-cell;
+  padding: 10px;
+  color: white;
+  column-count: 2;
+  word-wrap: break-word;
+}
+
 footer {
   font-family: Verdana, Helvetica, serif, sans-serif;
   font-size: 11pt;
+  background-color: #000;
 }
 
 .footer ul {

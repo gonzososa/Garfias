@@ -9,63 +9,91 @@
   <link rel="stylesheet" href="./css/responsive.css" type="text/css" />
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu' type='text/css'>
   <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css" type="text/css">
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
+  <script type="text/javascript" src="./js/master.js"></script>
 </head>
 <body>
   <header>
     <!--<img src="./images/logo.jpg" title="Talleres Garfias" />-->
-
-      <nav class="menu">
-        <ul class="menu-list">
-          <li class="menu-item"><a href=".inicio"><i class="fa fa-home"></i> Inicio</a></li>
-          <li class="menu-item"><a href=".servicios"><i class="fa fa-gear"></i> Servicios</a></li>
-          <li class="menu-item"><a href=".nosotros"><i class="fa fa-users"></i> Nosotros</a></li>
-          <li class="menu-item"><a href=".contacto"><i class="fa fa-envelope-o"></i> Contacto</a></li>
-        </ul>
-      </nav>
+    <nav class="menu">
+      <ul class="menu-list">
+        <li class="menu-item"><a href=".inicio"><i class="fa fa-home"></i> Inicio</a></li>
+        <li class="menu-item"><a href="#"><i class="fa fa-gear"></i> Servicios</a>
+          <ul class="submenu-servicios">
+            <li class="menu-item"><a href="#">Balconería</a></li>
+            <li class="menu-item"><a href="#">Cancelería</a></li>
+            <li class="menu-item"><a href="#">Cristal Templado</a></li>
+            <li class="menu-item"><a href="#">Puertas</a></li>
+            <li class="menu-item"><a href="#">Acero inóxidable</a></li>
+            <li class="menu-item"><a href="#">Pintura</a></li>
+            <li class="menu-item"><a href="#">Estructuras</a></li>
+            <li class="menu-item"><a href="#">Cortinas</a></li>
+            <li class="menu-item"><a href="#">Mosquiteros</a></li>
+            <li class="menu-item"><a href="#">Persianas</a></li>
+            <li class="menu-item"><a href="#">Toldos</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href=".nosotros"><i class="fa fa-users"></i> Nosotros</a></li>
+        <li class="menu-item"><a href=".contacto"><i class="fa fa-envelope-o"></i> Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-<div id="content">
-  <div id="galeria-servicios">
-    <figure class="slider">
-      <figure>
-        <img src="./images/slider/acero.jpg" />
-        <figcaption>Acero Inóxidable</figcaption>
+  <div id="content">
+    <div id="galeria-servicios">
+      <figure class="slider">
+        <figure>
+          <img src="./images/slider/acero.jpg" />
+          <figcaption>Acero Inóxidable</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/slider/banconeria.jpg" />
+          <figcaption>Banconería</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/slider/canceleria.jpg" />
+          <figcaption>Cancelería</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/slider/cristal.jpg" />
+          <figcaption>Cristal Templado</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/slider/estructuras.jpg" />
+          <figcaption>Estructuras</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/slider/fachadas.jpg" />
+          <figcaption>Fachadas</figcaption>
+        </figure>
+        <figure>
+          <img src="./images/slider/puertas.jpg" />
+          <figcaption>Puertas</figcaption>
+        </figure>
       </figure>
-      <figure>
-        <img src="./images/slider/banconeria.jpg" />
-        <figcaption>Banconería</figcaption>
-      </figure>
-      <figure>
-        <img src="./images/slider/canceleria.jpg" />
-        <figcaption>Cancelería</figcaption>
-      </figure>
-      <figure>
-        <img src="./images/slider/cristal.jpg" />
-        <figcaption>Cristal Templado</figcaption>
-      </figure>
-      <figure>
-        <img src="./images/slider/estructuras.jpg" />
-        <figcaption>Estructuras</figcaption>
-      </figure>
-      <figure>
-        <img src="./images/slider/fachadas.jpg" />
-        <figcaption>Fachadas</figcaption>
-      </figure>
-      <figure>
-        <img src="./images/slider/puertas.jpg" />
-        <figcaption>Puertas</figcaption>
-      </figure>
-    </figure>
+    </div>
 
+    <article class="inicio">
+      <p>Talleres Garfias es una empresa mexica fundad en el año 1982, iniciando con la fundución de metales y Balconería en general. Con el paso de los años talleres Garfias se ha preocupado por ofercer una amplia gama de servicios para el uso industrial, comercial y arquitectónico.</p>
+      <p>Nuestro propósito  es ofrece un trabajo que no solo cumpla con las normal de calidad y seguridad, sino que al mismo tiempo sea innovador y de fácil manejo para nuestros clientes.</p>
+      <p>Talleres Garfias cuenta con excelente instalaciones propias y adecucadas para la fabricación de cada uno de sus trabajos, así como el quipo necesario y personal calificado en cada una de sus áreas.</p>
+      <p>En resúmen: La experiencia y profesionalismo de talleres Garfias, representa para usted una verdadera garantía en su invesión.</p>
+    </article>
   </div>
 
-  <article class="inicio">
-    <p>Talleres Garfias es una empresa mexica fundad en el año 1982, iniciando con la fundución de metales y Balconería en general. Con el paso de los años talleres Garfias se ha preocupado por ofercer una amplia gama de servicios para el uso industrial, comercial y arquitectónico.</p>
-    <p>Nuestro propósito  es ofrece un trabajo que no solo cumpla con las normal de calidad y seguridad, sino que al mismo tiempo sea innovador y de fácil manejo para nuestros clientes.</p>
-    <p>Talleres Garfias cuenta con excelente instalaciones propias y adecucadas para la fabricación de cada uno de sus trabajos, así como el quipo necesario y personal calificado en cada una de sus áreas.</p>
-    <p>En resúmen: La experiencia y profesionalismo de talleres Garfias, representa para usted una verdadera garantía en su invesión.</p>
-  </article>
-</div>
+  <h2 style="color:white">¿Dónde nos encontramos?</h2>
+  <p class="contacto">
+    Avenida central #65<br />
+    Colonia 10 de Mayo<br />
+    Teléfonos: (228) 814.40.15, (228) 165.13.33<br />
+    Xalapa, Ver</p>
+  <p class="contacto">
+    Avenida Revolución<br />
+    Colonia "La Tranca"<br />
+    Teléfonos: (228) 810.75.53<br />
+    El Castillo, Ver</p>
+  <div id="googleMap" style="width:auto;height:500px;border:1px solid blue">
+  </div>
 
   <footer class="footer">
     <ul>
