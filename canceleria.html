@@ -13,8 +13,11 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu' type='text/css'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Tangerine' type='text/css'>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.image-gallery.min.js"></script>
   <script type="text/javascript" src="./js/master.js"></script>
 </head>
 <body>
@@ -45,58 +48,63 @@
   </header>
 
   <div id="content">
-    <div id="galeria-servicios">
-      <figure class="slider">
-        <figure>
-          <img src="./images/slider/acero.jpg" />
-          <figcaption>Acero Inóxidable</figcaption>
-        </figure>
-        <figure>
-          <img src="./images/slider/banconeria.jpg" />
-          <figcaption>Balconería</figcaption>
-        </figure>
-        <figure>
-          <img src="./images/slider/canceleria.jpg" />
-          <figcaption>Cancelería</figcaption>
-        </figure>
-        <figure>
-          <img src="./images/slider/cristal.jpg" />
-          <figcaption>Cristal Templado</figcaption>
-        </figure>
-        <figure>
-          <img src="./images/slider/estructuras.jpg" />
-          <figcaption>Estructuras</figcaption>
-        </figure>
-        <figure>
-          <img src="./images/slider/fachadas.jpg" />
-          <figcaption>Fachadas</figcaption>
-        </figure>
-        <figure>
-          <img src="./images/slider/puertas.jpg" />
-          <figcaption>Puertas</figcaption>
-        </figure>
-      </figure>
+  <h1>Cancelería de aluminio</h1>
+    <article class="descripcion">
+      <p>En el área de alumunio y cristal encontrará productos no solo elegantes, modernos y seguros,
+        sino con una gran diversidad de ventajas, sumándole que nuestros productos son construídos con el perfíl
+        adecuado a sus necesidades y de la mejor calidad con el fin de proporcionarle un producto con
+        arquitectura y diseño.</p>
+
+      <h3>Algunos de los productos son:</h3>
+
+      <ul>
+        <li>Canceles de baño</li>
+        <li>Corredizos, abatibles</li>
+        <li>Divisiones de oficinas</li>
+        <li>Fachadas</li>
+        <li>Exteriores - Interiores</li>
+        <li>Domos de vidrio</li>
+        <li>Policarbonato</li>
+        <li>Puertas</li>
+        <li>Ventanas</li>
+      </ul>
+    </article>
+
+    <div id="links">
+      <a href="./images/canceleria/img01.jpg" title="Imagen 1">
+        <img src="./images/canceleria/img01.jpg" alt="Imagen 1" />
+      </a>
+      <a href="./images/canceleria/img02.jpg" title="Imagen 2">
+        <img src="./images/canceleria/img02.jpg" alt="Imagen 2" />
+      </a>
+      <a href="./images/canceleria/img03.jpg" title="Imagen 3">
+        <img src="./images/canceleria/img03.jpg" alt="Imagen 3" />
+      </a>
     </div>
 
-    <article class="inicio">Talleres Garfias es una empresa mexicana fundada en el año 1982, iniciando con la fundución de metales y Balconería en general. Con el paso de los años talleres Garfias se ha preocupado por ofercer una amplia gama de servicios para el uso industrial, comercial y arquitectónico.
-      <p>Nuestro propósito  es ofrece un trabajo que no solo cumpla con las normal de calidad y seguridad, sino que al mismo tiempo sea innovador y de fácil manejo para nuestros clientes.</p>
-      <p>Talleres Garfias cuenta con excelente instalaciones propias y adecucadas para la fabricación de cada uno de sus trabajos, así como el quipo necesario y personal calificado en cada una de sus áreas.</p>
-      <p>En resúmen: La experiencia y profesionalismo de talleres Garfias, representa para usted una verdadera garantía en su invesión.</p>
-    </article>
-  </div>
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
 
-  <h2>¿Dónde nos encontramos?</h2>
-  <p class="contacto">
-    Avenida central #65<br />
-    Colonia 10 de Mayo<br />
-    Teléfonos: (228) 814.40.15, (228) 165.13.33<br />
-    Xalapa, Ver</p>
-  <p class="contacto">
-    Avenida Revolución<br />
-    Colonia "La Tranca"<br />
-    Teléfonos: (228) 810.75.53<br />
-    El Castillo, Ver</p>
-  <div id="googleMap"></div>
+    <script>
+      document.getElementById('links').onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+
+        blueimp.Gallery(links, options);
+      };
+    </script>
+
+  </div>
 
   <footer class="footer">
     <ul>
@@ -104,7 +112,7 @@
       <li><i class="icon-camera"></i><a href="#" id="privacidad">Aviso de privacidad</a></li>
     </ul>
     <div class="social-bar">
-            <a href="https://www.facebook.com/talleres.garfias" title="Facebook" target="_blank">
+            <a href="https://www.facebook.com" title="Facebook" target="_blank">
                <img src="./images/facebook.png" alt="Facebook icon" />
             </a>
             <a href="https://www.twitter.com" title="Twitter" target="_blank">
@@ -113,5 +121,4 @@
          </div>
   </footer>
 </body>
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
 </html>

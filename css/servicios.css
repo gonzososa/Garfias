@@ -1,0 +1,18 @@
+article.descripcion {
+  width: 80%;
+  padding: 2em;
+}
+
+#links img {
+  border: 1px solid grey;
+  display: inline-block;
+  width: 32%;
+}
+
+#links {
+  border: 5px solid black;
+}
+
+#content h1 {
+  padding: 1em;
+}

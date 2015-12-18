@@ -1,4 +1,5 @@
 @import 'slider.css';
+@import 'servicios.css';
 
 body {
   max-width: 1024px;
@@ -36,7 +37,6 @@ ul.menu-list {
 li.menu-item {
   color:  #fff;
   display: inline-block;
-  /*margin: 0em 1.5em;*/
   padding-top: 1em;
   padding-bottom: 1em;
   padding-left: 0;
@@ -88,9 +88,12 @@ ul.submenu-servicios li {
   padding: 0;
 }
 
+article {
+  text-align: justify;
+}
+
 article.inicio {
   padding: 10px;
-  text-align: justify;
   -webkit-column-count: 3;
   -moz-column-count: 3
   column-count: 3;
@@ -117,6 +120,10 @@ div#content {
 
 footer {
   background-color: #000;
+}
+
+footer a {
+  text-decoration: none;
 }
 
 .footer ul {
